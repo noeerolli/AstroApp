@@ -51,7 +51,7 @@ async function validar(e){
 function showTitle(){
 
     element_title.innerText = title;
-    element_description.innerText = description;
+    
     
     element_title.style.display = "block";
     
