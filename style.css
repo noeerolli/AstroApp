@@ -78,15 +78,21 @@ nav{
 
 #image{
     width: 80%;
-     margin-top: 2%;
+    margin-top: 2%;
   }
+
+#video{
+    margin-top: 2%;
+    height: 400px;
+    width: auto;
+}
 
 
 
 /*section2*/
 
 #section2{
-    margin-top: 10%;
+    margin-top: 8%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -200,6 +206,8 @@ max-width: 100%;
 /*footer*/
 
 footer{
+    
+    margin-top: 3%;
     padding-top: 1%;
     display: flex;
     border-top: 2px solid whitesmoke;
