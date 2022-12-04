@@ -33,7 +33,7 @@ document.body.onload = async function astroPic() {
             video.src= apod.url;
             video.width = 400;
             image.alt = apod.title;
-
+            image.style.display = "none";
            
             
         } else{
