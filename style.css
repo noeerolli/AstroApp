@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(22, 23, 23);
+    padding: 2% 5%;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+main{
+    margin-top: 10%;
+}
+
+
+h1, h3, p{
+    color: blanchedalmond;
+}
+
+p{
+    padding-top: 2%;
+
+}
+
+input{
+    margin-top: 2%;
+}
+
+/*nav*/
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    margin: 2%;
+    padding: 2%;
+    align-items: center;
+    border-bottom: 2px solid whitesmoke;
+   
+}
+
+#searchDate {
+    height: 30px;
+    padding: auto;
+  }
+
+
+.date2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+/*section1*/
+#section1{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+
+#pic-img{
+    margin-bottom: 0%;
+    width: 60%;
+    text-align: center;
+}
+
+#pic-info{  
+    width: 40%;
+}
+
+#image{
+    width: 80%;
+     margin-top: 2%;
+  }
+
+
+
+/*section2*/
+
+#section2{
+    margin-top: 10%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#search_gallery{
+    display: flex;
+    margin: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  
+    
+}
+
+.s_gallery{
+    max-width: 800px;
+    max-height: 1000px;
+    
+}
+
+#search_img, #search_img2{
+ 
+max-width: 100%;
+}
+
+
+
+#form2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#button4{
+    margin-top: 0.5em;
+}
+
+
+
+/*buttons*/
+
+.dark {
+    background-color: black;
+    border: solid whitesmoke ;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.smallDark{
+    
+    background-color: black;
+    border: solid whitesmoke ;
+    color: whitesmoke;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+    margin: 4px 2px;
+    cursor: pointer;
+
+
+}
+
+/*modal*/
+
+#modalContainer {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: black;
+    padding: 2%;
+   
+}
+
+.close{
+    color: black;
+    height: 2em;
+    width: 2em;
+}
+
+#modalPic, #modalVideo{
+    max-width: 90%;
+    margin: auto;
+  
+}
+
+#modalP{
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+
+/*footer*/
+
+footer{
+    padding-top: 1%;
+    display: flex;
+    border-top: 2px solid whitesmoke;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+@media (max-width: 750px) { 
+    #section1{
+    display: block;
+    justify-content: center;
+    }
+    #pic-img{
+     width: 100%;   
+    }
+    #pic-info{
+        width: 100%;
+    }
+    #section2{
+        display: block;
+        justify-content: center;
+        }
+    
+    .date{
+        display: block;
+    }
+    
+}

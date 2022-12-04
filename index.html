@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro App</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div><h1>Astro App</h1></div>
+                <div  class="date">
+                    <p>Seleciona una fecha para ver la foto del día:</p>
+                <div class="date2">
+                    <input id="selectedDate" type="date"  min="1995-06-16" max="">
+                    <button id="searchDate" class="smallDark" onclick="searchDate()">Mostrar</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id = "section1">
+
+            <div id="pic-img">
+                <h3>Foto o video astronómico del día</h3>
+                <p>Cada día se presenta una imagen diferente de nuestro fascinante universo, junto con una breve explicación escrita por un astrónomo profesional.</p>
+                <img id="image" src="" alt="">
+                <iframe id="video" src="" alt=""> </iframe>  
+                <p id="title"></p>             
+            </div>
+
+            <div id="pic-info">
+                <button id="button3" class="dark">Nombre y fecha</button>
+                <p id="picture_name"></p>
+                <p id="picture_date"></p>
+                <button id="button2" class="dark">Descripción</button>
+                <p id="explanation"></p>
+               
+            </div>
+            
+            
+            
+        </section>
+        <section id="section2">
+            <h3>Querés ver otra foto de la NASA?</h3>
+            <p>Tema de interés (english, please ☺):</p>
+           
+            <form id="myForm"   >
+               
+                <div id="form2">
+                    <input id="search_inp" type="text" >
+                    <button type="submit" class="smallDark" id="button4" >Buscar</button>
+                </div>
+               
+                <div id="search_gallery">
+                    <p id="searchP"></p>
+                     <div class="s_gallery">
+                        <img onmouseover="showTitle()" onmouseout="hideTitle()" id="search_img" src="" alt="" >
+                    </div>
+                   
+                </div>
+                <div id="searchGalleryData">
+                    <h3 id="searchGalleryTitle"></h3>
+                    <p id ="searchGalleryDescription"></p>
+                </div>
+                
+            </form>
+        </section>
+
+       
+
+    </main>
+
+    <footer>
+        <p>Noelia Rolli - Curso de JavaScript avanzado CILSA - 2022</p>
+
+        <button id="button1" type="button"  class="smallDark">Cambiar tema</button>
+
+
+    </footer>
+
+
+    <div id="modalContainer" class="modal">
+        <button id="closeModal" >X</button>
+        <img class="modalPic" id="modalPic"  src="" alt="">
+        <iframe id="modalVideo" src=""  target="_parent" alt=""> </iframe>  
+        <div id="modalPicName"></div>
+        <p id="modalP"></p>
+      </div>
+
+
+    <script src="script.js"></script>
+    <script src="calendar.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
